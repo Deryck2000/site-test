@@ -1,0 +1,7 @@
+/* components/ScrollableContainer.module.css */
+.container {
+  overflow-y: auto; /* 縦方向にスクロールを可能にします */
+  border: 1px solid #808080; /* 枠線を黒色にします */
+  padding: 10px; /* コンテンツと枠線の間にスペースを追加します (任意) */
+  box-sizing: border-box; /* ボーダーを含めてサイズを計算します */
+}

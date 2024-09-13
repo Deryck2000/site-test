@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* リンクのスタイル */
+a {
+    color: #000080; /* 一般的なリンクカラー（青色） */
+    text-decoration: none; /* 下線を消す */
+}
+
+a:hover {
+    color: #000080; /* ホバー時の色（ダークブルー） */
+    text-decoration: underline; /* ホバー時に下線を表示 */
+}
+body {
+    background-image: url('/img/background.webp'); /* ここに画像のURLを指定 */
+    background-size: cover; /* 画像を画面全体にフィットさせる */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-position: center; /* 画像を中央に配置 */
+}
+
+.outlined-text {
+    color: white; /* テキストの色 */
+    text-shadow: 
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black; /* 縁取りの色と位置 */
+}
+
+.link-icon {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+/* components/ScrollableContainer.module.css */
+.container {
+    overflow-y: auto; /* 縦方向にスクロールを可能にします */
+    border: 2px solid black; /* 枠線を黒色にします */
+    padding: 10px; /* コンテンツと枠線の間にスペースを追加します (任意) */
+    box-sizing: border-box; /* ボーダーを含めてサイズを計算します */
+  }
+  
